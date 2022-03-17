@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset=UTF-8>
+    <meta name=viewport content=width=device-width>
+    </style>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script language="javascript">
+
+        function fun0() {$.post("http://192.168.1.106", { t1: 0 },$("#sp1").text("靜止"));}
+        function fun1() {$.post("http://192.168.1.106", { t1: 1 },$("#sp1").text("前進"));}
+        function fun2() {$.post("http://192.168.1.106", { t1: 2 },$("#sp1").text("左迴旋"));}
+        function fun3() {$.post("http://192.168.1.106", { t1: 3 },$("#sp1").text("右迴旋"));}
+        function fun4() {$.post("http://192.168.1.106", { t1: 4 },$("#sp1").text("後退"));}
+
+    </script>
+
+    <style type=text/css>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        td {
+            text-align: center;
+        }
+
+        button {
+            margin: 10px;
+            width: 90%;
+            height: 90%;
+            font-family: helvetica, arial;
+            font-size: 100%;
+            color: rgb(0, 0, 0);
+            background: #BFDFFF;
+            padding: 5px 5px 5px 5px;
+			display: inline-block;
+			padding: 15px 25px;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			outline: none;
+			background-color: #2ec2a2;
+			border: none;
+			border-radius: 15px;
+			box-shadow: 0 9px #999;
+        }
+		
+		button:hover {background-color: #2c5a63}
+		
+		button:active {
+		background-color: #3e8e41;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+    </style>
+
+
+</head>
+
+<body style="background-color:#d8ebcf;">
+    <table style="margin-left: auto; margin-right: auto;" cellpadding="10" border='0' width=400 height=400>
+        <tr>
+            <td colspan="3" align="center" valign="center" style="font-size: 30px>四足機器人控制</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center" valign="center">
+                <img src="img/x.jpg" width="75%" height="75%" alt="一張圖片">
+            </td>
+            <tr>
+                <td></td>
+                <td ><button type=button onclick="fun1()">前進</button></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><button type=button onclick="fun2()">左移</button></td>
+                <td><button type=button onclick="fun0()">重置</button></td></td>
+                <td><button type=button onclick="fun3()">右移</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type=button onclick="fun4()">後退</button></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div style="font-size: 25px; margin: 10px;">狀態:
+                    <span id="sp1">靜止</span>
+                    </div>
+                </td>
+            </tr>
+        </tr>
+    </table>
+</body>
+
+</html>
