@@ -231,24 +231,23 @@ void fun1(){
       delay(200);
       break;
     case 0: //歸復
-       pwm.setPWM(0, 0, pulseWidth(90));
-       pwm.setPWM(1, 0, pulseWidth(90));
-       pwm.setPWM(2, 0, pulseWidth(90));
-       pwm.setPWM(3, 0, pulseWidth(90));
-       pwm.setPWM(12, 0, pulseWidth(90));
-       pwm.setPWM(13, 0, pulseWidth(90));
-       pwm.setPWM(14, 0, pulseWidth(90));
-       pwm.setPWM(15, 0, pulseWidth(90));
-       delay(500);
-       pwm.setPWM(0, 0, pulseWidth(70));
-       pwm.setPWM(1, 0, pulseWidth(90));
-       pwm.setPWM(2, 0, pulseWidth(90));
-       pwm.setPWM(3, 0, pulseWidth(110));
-       pwm.setPWM(12, 0, pulseWidth(110));
-       pwm.setPWM(13, 0, pulseWidth(90));
-       pwm.setPWM(14, 0, pulseWidth(90));
-       pwm.setPWM(15, 0, pulseWidth(70));
-    
+      pwm.setPWM(0, 0, pulseWidth(90));
+      pwm.setPWM(1, 0, pulseWidth(90));
+      pwm.setPWM(2, 0, pulseWidth(90));
+      pwm.setPWM(3, 0, pulseWidth(90));
+      pwm.setPWM(12, 0, pulseWidth(90));
+      pwm.setPWM(13, 0, pulseWidth(90));
+      pwm.setPWM(14, 0, pulseWidth(90));
+      pwm.setPWM(15, 0, pulseWidth(90));
+      delay(500);
+      pwm.setPWM(0, 0, pulseWidth(70));
+      pwm.setPWM(1, 0, pulseWidth(90));
+      pwm.setPWM(2, 0, pulseWidth(90));
+      pwm.setPWM(3, 0, pulseWidth(110));
+      pwm.setPWM(12, 0, pulseWidth(110));
+      pwm.setPWM(13, 0, pulseWidth(90));
+      pwm.setPWM(14, 0, pulseWidth(90));
+      pwm.setPWM(15, 0, pulseWidth(70));
       break;
   }
 }
